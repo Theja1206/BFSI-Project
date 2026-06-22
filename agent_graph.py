@@ -18,8 +18,7 @@ if not api_key:
     raise ValueError("ANTHROPIC_API_KEY environment variable is missing")
 
 model = ChatAnthropic(
-    model="claude-sonnet-4-6",
-    temperature=0
+    model="claude-opus-4-8"
 ).bind_tools(tools)
 
 def call_card_analyst(state: AgentState):

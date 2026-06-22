@@ -1,9 +1,11 @@
 import os
 from dotenv import load_dotenv
+load_dotenv()
+
 from langchain_core.messages import HumanMessage
 from agent_graph import credit_agent_app
 
-load_dotenv()
+
 
 def run_risk_evaluation(customer_id:str):
     print(f"\n --- Initalizing agentic risk review for {customer_id}---")
